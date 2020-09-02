@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AOP/AOP.iml" filepath="$PROJECT_DIR$/AOP/AOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeepInAnnotation/DeepInAnnotation.iml" filepath="$PROJECT_DIR$/DeepInAnnotation/DeepInAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeepInAOP/DeepInSpring.iml" filepath="$PROJECT_DIR$/DeepInAOP/DeepInSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisSpring/MybatisSpring.iml" filepath="$PROJECT_DIR$/MybatisSpring/MybatisSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSpringMVC/SSpringMVC.iml" filepath="$PROJECT_DIR$/SSpringMVC/SSpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringAnnotation/SpringAnnotation.iml" filepath="$PROJECT_DIR$/SpringAnnotation/SpringAnnotation.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean class="com.star.proxy.UserServiceImpl" id="userService"/>
+
+<!--    <bean class="com.star.dynamic.Before" id="before"/>-->
+
+    <bean class="com.star.dynamic.Before1" id="before"/>
+
+    <bean class="com.star.proxy.OrderServiceImpl" id="orderService"/>
+
+    <bean class="com.star.dynamic.Around" id="around"/>
+
+    <aop:config proxy-target-class="true">
+        <!--        所有方法都作为切入点加入额外功能-->
+        <aop:pointcut id="pc" expression="execution(* login(..)) and args(String,String))"/>
+        <aop:advisor advice-ref="around" pointcut-ref="pc"/>
+    </aop:config>
+
+</beans>

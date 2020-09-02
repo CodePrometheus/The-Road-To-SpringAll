@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean id="customer" class="aop.Customer">
+        <constructor-arg  value="xiaohei"/>
+        <constructor-arg type="java.lang.Integer" value="110"/>
+    </bean>
+
+    <bean id="emp1" class="aop.Emp">
+        <property name="name" value="xiaohei"/>
+        <property name="id" value="10"/>
+        <property name="email" >
+            <list>
+                <value>xiaonan@qq.com</value>
+                <value>xiaonan@163.com</value>
+            </list>
+        </property>
+        <property name="tels">
+            <set>
+                <value>110</value>
+                <value>120</value>
+                <value>119</value>
+                <value>119</value>
+            </set>
+        </property>
+        <property name="addr">
+            <list>
+                <value>www</value>
+                <value>www</value>
+                <value>aaa</value>
+            </list>
+        </property>
+        <property name="qqs">
+            <map>
+                <entry>
+                    <key><value>xiaohei</value></key>
+                    <value>123456</value>
+                </entry>
+            </map>
+        </property>
+        <property name="prop">
+            <props>
+                <prop key="key1">value1</prop>
+                <prop key="key2">value2</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--    管理service组件对象-->
+    <bean id="empService" class="aop.EmpServiceImpl" name="empService,2p"/>
+
+    <!--    注册通知-->
+    <bean id="myBeforeAdvice" class="aop.MyBeforeAdvice"/>
+
+    <!--    组装切面-->
+    <aop:config>
+
+        <!--        配置切入点  id即为切入点在工厂的唯一标识  expression用来指定切入项目中哪些组件中的方法-->
+        <!--       execution(返回值*表示不关心方法的返回值  包.类名.方法名(参数类型)    *表示所有方法  ..表示参数任意    ) -->
+        <aop:pointcut id="emp" expression="within(aop.EmpServiceImpl)"/>
+
+        <!--        配置切面    分别是工厂中通知的id          工厂切入点唯一标识-->
+        <aop:advisor advice-ref="myBeforeAdvice" pointcut-ref="emp"/>
+    </aop:config>
+
+</beans>
