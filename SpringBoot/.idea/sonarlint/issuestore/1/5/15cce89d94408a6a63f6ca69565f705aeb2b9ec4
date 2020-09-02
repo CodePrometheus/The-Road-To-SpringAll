@@ -1,0 +1,16 @@
+
+M	java:S106/"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ÏéËÓ
+Q	java:S125I"<This block of commented-out lines of code should be removed.(š¬çè
+Q	java:S125L"<This block of commented-out lines of code should be removed.(ØÛµ™
+V	java:S125F"<This block of commented-out lines of code should be removed.(°¯Ô×ùÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(»‚òâ
+N	java:S106,"9Replace this use of System.out or System.err by a logger.( „³¿
+X	java:S1256"<This block of commented-out lines of code should be removed.(øº‰ã8Û„ÙÚ¾.
+J
+java:S11171"5Rename "q" which hides the field declared at line 66.(–æ
+M	java:S1061"9Replace this use of System.out or System.err by a logger.(–æ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(Î­¢üÿÿÿÿ
+A
+java:S16121",Replace this lambda with a method reference.(–æ
+V	java:S125&"<This block of commented-out lines of code should be removed.(‰ü¾üÿÿÿÿ

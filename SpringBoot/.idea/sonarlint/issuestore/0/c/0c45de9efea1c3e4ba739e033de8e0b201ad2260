@@ -1,0 +1,7 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ØŸ„ıÿÿÿÿ
+k
+java:S1128"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àıÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(»«Åûÿÿÿÿ
+h	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì™Ó£şÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ö¹ó™úÿÿÿÿ

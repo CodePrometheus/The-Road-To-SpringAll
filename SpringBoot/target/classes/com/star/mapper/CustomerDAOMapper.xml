@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.star.dao.CustomerDAO">
+
+    <!--    save-->
+    <insert id="save" parameterType="Customer">
+        insert into customers values (#{id},#{name},#{email},#{birth})
+    </insert>
+
+    <!--    findAll-->
+    <select id="findAll" resultType="Customer">
+        select id,name,email,birth from customers
+    </select>
+
+</mapper>
